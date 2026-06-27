@@ -3,42 +3,56 @@
   <description><p>Brian Carter — PixInsight script fixes/ports.</p></description>
   <platform os="all" arch="noarch" version="1.8.9:1.9.9">
     <package fileName="AutoDBE-20260627.zip"
-             sha1="509df4442c5ede4a8b7bba9ca68c2a2e3de4eb86"
+             sha1="75afb0e797529dc1c72befe8e26a4f56dac7e419"
              type="script"
              releaseDate="20260627">
       <title>AutoDBE</title>
       <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
     </package>
     <package fileName="ContinuumSubtraction-20260627.zip"
-             sha1="6a14b2c58ad8c06810d8c84377ad8f7fffb49d20"
+             sha1="20ad4cac9c77b823476959eedeb331bee81fef50"
              type="script"
              releaseDate="20260627">
       <title>ContinuumSubtraction</title>
       <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
     </package>
     <package fileName="DarkStructureEnhance-20260627.zip"
-             sha1="03dbb4c69bd5bacd0ab7935de9e07f8ecc2ba25e"
+             sha1="d2160edfb2f49694be9c6fc855e49bfd29433c11"
              type="script"
              releaseDate="20260627">
       <title>DarkStructureEnhance</title>
       <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
     </package>
+    <package fileName="Halo-B-Gon-20260627.zip"
+             sha1="58498c6d6b082b3a1095ebb087c6f0ce841e9755"
+             type="script"
+             releaseDate="20260627">
+      <title>Halo-B-Gon</title>
+      <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
+    </package>
+    <package fileName="PerfectPalettePicker-20260627.zip"
+             sha1="01ca578d46b9724d5fab35237e65691535d03031"
+             type="script"
+             releaseDate="20260627">
+      <title>PerfectPalettePicker</title>
+      <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
+    </package>
     <package fileName="star_stretch_v2.1-20260627.zip"
-             sha1="e42c2622bb274d3453ddcb9b307d63e69999a4e2"
+             sha1="a425d42e584d8acb21f94cb9f64e0e0e2cd8a0a2"
              type="script"
              releaseDate="20260627">
       <title>star_stretch_v2.1</title>
       <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
     </package>
     <package fileName="statisticalstretch-20260627.zip"
-             sha1="420762f451d5fa72c05732baee87420352f0a419"
+             sha1="359c5f630f643e999e6ffc4e93a0929e437a8cc8"
              type="script"
              releaseDate="20260627">
       <title>statisticalstretch</title>
       <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
     </package>
     <package fileName="ForaxxPalette-20260627.zip"
-             sha1="fffd16dbd10b1ef8f054bcfc9884f3ca9bc547e5"
+             sha1="ace5b67bdc0254753d15669abfd3e032c709a0f6"
              type="script"
              releaseDate="20260627">
       <title>ForaxxPalette</title>
