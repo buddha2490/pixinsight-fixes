@@ -3,31 +3,45 @@
   <description><p>Brian Carter — PixInsight script fixes/ports.</p></description>
   <platform os="all" arch="noarch" version="1.8.9:1.9.9">
     <package fileName="AutoDBE-20260627.zip"
-             sha1="cd49dd8e304b226f8dc2c47911cf35c3b29c6e4a"
+             sha1="509df4442c5ede4a8b7bba9ca68c2a2e3de4eb86"
              type="script"
              releaseDate="20260627">
       <title>AutoDBE</title>
       <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
     </package>
     <package fileName="ContinuumSubtraction-20260627.zip"
-             sha1="08be776bbc6f2430c33d68fe23429538cb8cfa2d"
+             sha1="6a14b2c58ad8c06810d8c84377ad8f7fffb49d20"
              type="script"
              releaseDate="20260627">
       <title>ContinuumSubtraction</title>
       <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
     </package>
+    <package fileName="DarkStructureEnhance-20260627.zip"
+             sha1="03dbb4c69bd5bacd0ab7935de9e07f8ecc2ba25e"
+             type="script"
+             releaseDate="20260627">
+      <title>DarkStructureEnhance</title>
+      <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
+    </package>
     <package fileName="star_stretch_v2.1-20260627.zip"
-             sha1="8f48a6c8a4e37fb27ac1f9af536309e8ca91278c"
+             sha1="e42c2622bb274d3453ddcb9b307d63e69999a4e2"
              type="script"
              releaseDate="20260627">
       <title>star_stretch_v2.1</title>
       <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
     </package>
     <package fileName="statisticalstretch-20260627.zip"
-             sha1="19923047dd7c5e570f50d9aaf287ad255aa24756"
+             sha1="420762f451d5fa72c05732baee87420352f0a419"
              type="script"
              releaseDate="20260627">
       <title>statisticalstretch</title>
+      <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
+    </package>
+    <package fileName="ForaxxPalette-20260627.zip"
+             sha1="fffd16dbd10b1ef8f054bcfc9884f3ca9bc547e5"
+             type="script"
+             releaseDate="20260627">
+      <title>ForaxxPalette</title>
       <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
     </package>
   </platform>

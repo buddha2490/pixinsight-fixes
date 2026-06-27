@@ -3,24 +3,36 @@
     "content_hash": "7b570a114feaf67e2c60c9338a83737bc7dabcb9c35cda38a183a61346816f7f",
     "release_date": "20260627",
     "zip_name": "AutoDBE-20260627.zip",
-    "sha1": "cd49dd8e304b226f8dc2c47911cf35c3b29c6e4a"
+    "sha1": "509df4442c5ede4a8b7bba9ca68c2a2e3de4eb86"
   },
   "ContinuumSubtraction": {
     "content_hash": "efffc6e4dbda513bf1972693d868ad9a4c98e19fe6f5ef1978c0bdc7df9d2c6c",
     "release_date": "20260627",
     "zip_name": "ContinuumSubtraction-20260627.zip",
-    "sha1": "08be776bbc6f2430c33d68fe23429538cb8cfa2d"
+    "sha1": "6a14b2c58ad8c06810d8c84377ad8f7fffb49d20"
+  },
+  "DarkStructureEnhance": {
+    "content_hash": "6cde6dc1b78a6a36d514b6af7cb46772cacb0a7ce6a578962433fb5ec6d70878",
+    "release_date": "20260627",
+    "zip_name": "DarkStructureEnhance-20260627.zip",
+    "sha1": "03dbb4c69bd5bacd0ab7935de9e07f8ecc2ba25e"
   },
   "star_stretch_v2.1": {
     "content_hash": "91cdf32a57bdb50cfdbf143cbc5b4a6164dfe21328a708fa2fd8a9398d000f82",
     "release_date": "20260627",
     "zip_name": "star_stretch_v2.1-20260627.zip",
-    "sha1": "8f48a6c8a4e37fb27ac1f9af536309e8ca91278c"
+    "sha1": "e42c2622bb274d3453ddcb9b307d63e69999a4e2"
   },
   "statisticalstretch": {
     "content_hash": "d3189090dd1c06ab8e6d154fa3b5c97218c243c8938cb9ddfabb65b3e3643516",
     "release_date": "20260627",
     "zip_name": "statisticalstretch-20260627.zip",
-    "sha1": "19923047dd7c5e570f50d9aaf287ad255aa24756"
+    "sha1": "420762f451d5fa72c05732baee87420352f0a419"
+  },
+  "ForaxxPalette": {
+    "content_hash": "6e0be85e0ad970a4147cc608eb72021bb559a39208a14233cccb8c866dfab2f0",
+    "release_date": "20260627",
+    "zip_name": "ForaxxPalette-20260627.zip",
+    "sha1": "fffd16dbd10b1ef8f054bcfc9884f3ca9bc547e5"
   }
 }
