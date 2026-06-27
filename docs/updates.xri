@@ -3,17 +3,31 @@
   <description><p>Brian Carter — PixInsight script fixes/ports.</p></description>
   <platform os="all" arch="noarch" version="1.8.9:1.9.9">
     <package fileName="AutoDBE-20260627.zip"
-             sha1="b6cca2fa5581353d8d4575aa534c516c8c69cf84"
+             sha1="cd49dd8e304b226f8dc2c47911cf35c3b29c6e4a"
              type="script"
              releaseDate="20260627">
       <title>AutoDBE</title>
       <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
     </package>
     <package fileName="ContinuumSubtraction-20260627.zip"
-             sha1="a1570285b89f73b556e71934ef0658f59daa8854"
+             sha1="08be776bbc6f2430c33d68fe23429538cb8cfa2d"
              type="script"
              releaseDate="20260627">
       <title>ContinuumSubtraction</title>
+      <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
+    </package>
+    <package fileName="star_stretch_v2.1-20260627.zip"
+             sha1="8f48a6c8a4e37fb27ac1f9af536309e8ca91278c"
+             type="script"
+             releaseDate="20260627">
+      <title>star_stretch_v2.1</title>
+      <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
+    </package>
+    <package fileName="statisticalstretch-20260627.zip"
+             sha1="19923047dd7c5e570f50d9aaf287ad255aa24756"
+             type="script"
+             releaseDate="20260627">
+      <title>statisticalstretch</title>
       <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
     </package>
   </platform>
