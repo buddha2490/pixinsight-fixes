@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xri version="1.0">
+  <description><p>Brian Carter — PixInsight script fixes/ports.</p></description>
+  <platform os="all" arch="noarch" version="1.8.9:1.9.9">
+    <package fileName="AutoDBE-20260627.zip"
+             sha1="0502acadd7e68a018cc51b73134acd6d329b7a3e"
+             type="script"
+             releaseDate="20260627">
+      <title>AutoDBE</title>
+      <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
+    </package>
+    <package fileName="ContinuumSubtraction-20260627.zip"
+             sha1="dec4db1a73356b2aca2f738ba9efd2adef2e3469"
+             type="script"
+             releaseDate="20260627">
+      <title>ContinuumSubtraction</title>
+      <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
+    </package>
+  </platform>
+</xri>

@@ -1,0 +1,14 @@
+{
+  "AutoDBE": {
+    "content_hash": "03d7d18e979faee49d19cc81d9a5901948f7a7d0807691a419708bd4a893e2ce",
+    "release_date": "20260627",
+    "zip_name": "AutoDBE-20260627.zip",
+    "sha1": "0502acadd7e68a018cc51b73134acd6d329b7a3e"
+  },
+  "ContinuumSubtraction": {
+    "content_hash": "053e855f7c7c383327f53eae64e662e21d83e26916781356cbfd7e476f41d6da",
+    "release_date": "20260627",
+    "zip_name": "ContinuumSubtraction-20260627.zip",
+    "sha1": "dec4db1a73356b2aca2f738ba9efd2adef2e3469"
+  }
+}
