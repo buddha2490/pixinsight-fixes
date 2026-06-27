@@ -65,8 +65,8 @@ print(s.get('$name', {}).get('zip_name', ''))" 2>/dev/null || echo "")
 
     # Stage the zip layout in a temp dir
     tmp=$(mktemp -d)
-    mkdir -p "$tmp/src/scripts/$name"
-    cp "$src" "$tmp/src/scripts/$name/$name.js"
+    mkdir -p "$tmp/src/scripts/Pixinsight-Fixes"
+    cp "$src" "$tmp/src/scripts/Pixinsight-Fixes/$name.js"
 
     # Create zip (stored paths relative to tmp)
     (cd "$tmp" && zip -r "$OUT_DIR/$zip_name" src/)

@@ -34,7 +34,7 @@
  * COPYRIGHT © 2024 Franklin Marek. ALL RIGHTS RESERVED.
  ******************************************************************************/
 
-#feature-id AutoDBE : SetiAstro > Automatic DBE
+#feature-id AutoDBE : Pixinsight-Fixes > Automatic DBE
 #feature-icon  adbe.svg
 #feature-info This script performs a gradient correction via gradient descent and provides a background ROI
 

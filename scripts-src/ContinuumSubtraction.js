@@ -1,5 +1,5 @@
 #engine v8
-#feature-id ContinuumSubtractionUtility : SetiAstro > ContinuumSubtraction Utility
+#feature-id ContinuumSubtractionUtility : Pixinsight-Fixes > ContinuumSubtraction Utility
 #feature-icon  continuumsubtraction.svg
 #feature-info This script is designed for the automated continuum subtraction in astrophotography images. It includes functionalities for gradient descent optimization, color calibration, background neutralization, and non-linear stretching.
 
