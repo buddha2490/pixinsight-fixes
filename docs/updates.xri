@@ -9,10 +9,10 @@
       <title>AutoDBE</title>
       <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
     </package>
-    <package fileName="ContinuumSubtraction-20260627.zip"
-             sha1="20ad4cac9c77b823476959eedeb331bee81fef50"
+    <package fileName="ContinuumSubtraction-20260702.zip"
+             sha1="9cdafd53297e129dbd92b1c3fec3e8df5dcfe492"
              type="script"
-             releaseDate="20260627">
+             releaseDate="20260702">
       <title>ContinuumSubtraction</title>
       <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
     </package>
