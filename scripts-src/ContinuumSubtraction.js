@@ -164,8 +164,7 @@ function checkImageIsGreyscale(imageId) {
 
 
 function ContinuumSubtractionDialog() {
-    this.__base__ = Dialog;
-    this.__base__();
+    Dialog.call(this);
 
     this.title = TITLE + " Script";
 
