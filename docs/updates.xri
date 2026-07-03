@@ -10,7 +10,7 @@
       <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
     </package>
     <package fileName="ContinuumSubtraction-20260702.zip"
-             sha1="4310cc1497ddf167d1a89cc1a52b47b3d40acf7d"
+             sha1="dc38b0f0f67081f82dcd3e9747a46d84ca9c0433"
              type="script"
              releaseDate="20260702">
       <title>ContinuumSubtraction</title>

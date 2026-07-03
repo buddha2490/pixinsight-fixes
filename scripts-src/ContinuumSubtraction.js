@@ -44,6 +44,7 @@
 #include <pjsr/StdCursor.jsh>
 // #include <pjsr/Sizer.jsh>        // native in V8
 #include <pjsr/FrameStyle.jsh>
+#include <pjsr/TextAlign.jsh>
 // #include <pjsr/NumericControl.jsh> // native in V8
 #include <pjsr/ImageOp.jsh>
 #include <pjsr/SampleType.jsh>
