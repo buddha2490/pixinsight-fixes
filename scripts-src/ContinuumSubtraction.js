@@ -163,8 +163,9 @@ function checkImageIsGreyscale(imageId) {
 
 
 
-function ContinuumSubtractionDialog() {
-    Dialog.call(this);
+class ContinuumSubtractionDialog extends Dialog {
+  constructor() {
+    super();
 
     this.title = TITLE + " Script";
 
@@ -439,8 +440,97 @@ function ContinuumSubtractionDialog() {
     this.executeButton.onClick = () => {
         this.executeScript();
     };
-}
-ContinuumSubtractionDialog.prototype = new Dialog;
+  }
+
+  executeScript() {
+    // Close any previously created images to avoid conflicts
+    closeCreatedWindows();
+
+    // Get selected values
+    let ha = this.haComboBox.itemText(this.haComboBox.currentItem);
+    let oiii = this.oiiiComboBox.itemText(this.oiiiComboBox.currentItem);
+    let sii = this.siiComboBox.itemText(this.siiComboBox.currentItem);
+    let redRgb = this.redRgbComboBox.itemText(this.redRgbComboBox.currentItem);
+    let green = this.greenComboBox.itemText(this.greenComboBox.currentItem);
+
+    // Get selected mode
+    let mode = this.starryRadioButton.checked ? "Starry" : "Starless";
+
+    // Set quality multiplier based on selected mode
+    qualityMultiplier = this.starryRadioButton.checked ? 0.9 : 1.0;
+
+    // Create images and find background previews
+    let imagesAndPreviews = createImagesAndFindBackground(ha, oiii, sii, redRgb, green);
+
+    // Check if images were created successfully
+    if (imagesAndPreviews === null) {
+        return; // Exit if no images were created
+    }
+
+    // Apply background neutralization to images
+    applyBackgroundNeutralizationToImages(imagesAndPreviews);
+
+    if (mode === "Starry") {
+        // Apply color calibration based on selected mode
+        applyColorCalibrationToImagesStarry(imagesAndPreviews);
+    } else {
+        // Apply color calibration based on selected mode
+        applyColorCalibrationToImagesStarless(imagesAndPreviews);
+    }
+
+    // Extract emission line data from color-calibrated images
+    for (let i = 0; i < imagesAndPreviews.createdImages.length; i++) {
+        let imageWindow = ImageWindow.windowById(imagesAndPreviews.createdImages[i]);
+        extractEmissionLineData(imageWindow);
+    }
+
+    // Ensure images are grayscale after extracting emission line data
+    for (let i = 0; i < imagesAndPreviews.createdImages.length; i++) {
+        let imageWindow = ImageWindow.windowById(imagesAndPreviews.createdImages[i]);
+        convertToGrayscale(imageWindow);
+    }
+
+    // Apply denoising if selected
+    if (ContinuumSubtractionParameters.applyNoiseReduction) {
+        for (let i = 0; i < imagesAndPreviews.createdImages.length; i++) {
+            let imageWindow = ImageWindow.windowById(imagesAndPreviews.createdImages[i]);
+            if (ContinuumSubtractionParameters.noiseReductionMethod === "NoiseXterminator") {
+                applyNoiseXterminator(imageWindow);
+            } else if (ContinuumSubtractionParameters.noiseReductionMethod === "GraXpertDenoise") {
+                applyGraXpertDenoise(imageWindow);
+            }
+        }
+    }
+
+    console.show();
+
+    if (!ContinuumSubtractionParameters.outputLinearImageOnly) {
+        // Apply non-linear stretch to all created images
+        for (let i = 0; i < imagesAndPreviews.createdImages.length; i++) {
+            let imageWindow = ImageWindow.windowById(imagesAndPreviews.createdImages[i]);
+            applyNonLinearStretch(imageWindow);
+        }
+
+        // Extract pure signal from all created images
+        for (let i = 0; i < imagesAndPreviews.createdImages.length; i++) {
+            let imageWindow = ImageWindow.windowById(imagesAndPreviews.createdImages[i]);
+            extractPureSignal(imageWindow);
+        }
+
+        // Curves Boost on all created images
+        for (let i = 0; i < imagesAndPreviews.createdImages.length; i++) {
+            let imageWindow = ImageWindow.windowById(imagesAndPreviews.createdImages[i]);
+            applyCurvesBoost(imageWindow);
+        }
+    }
+
+    // Print completion message
+    console.noteln("Continuum Subtraction complete! Created: ", imagesAndPreviews.createdImages.join(", "));
+
+    // Close the dialog
+    this.ok();
+  }
+} // end class ContinuumSubtractionDialog
 
 
 
@@ -1083,97 +1173,6 @@ function applyCurvesBoost(imageWindow){
       P.Kt = CurvesTransformation.prototype.AkimaSubsplines;
       P.executeOn(imageWindow.mainView);
 }
-
-
-ContinuumSubtractionDialog.prototype.executeScript = function() {
-    // Close any previously created images to avoid conflicts
-    closeCreatedWindows();
-
-    // Get selected values
-    let ha = this.haComboBox.itemText(this.haComboBox.currentItem);
-    let oiii = this.oiiiComboBox.itemText(this.oiiiComboBox.currentItem);
-    let sii = this.siiComboBox.itemText(this.siiComboBox.currentItem);
-    let redRgb = this.redRgbComboBox.itemText(this.redRgbComboBox.currentItem);
-    let green = this.greenComboBox.itemText(this.greenComboBox.currentItem);
-
-    // Get selected mode
-    let mode = this.starryRadioButton.checked ? "Starry" : "Starless";
-
-    // Set quality multiplier based on selected mode
-    qualityMultiplier = this.starryRadioButton.checked ? 0.9 : 1.0;
-
-    // Create images and find background previews
-    let imagesAndPreviews = createImagesAndFindBackground(ha, oiii, sii, redRgb, green);
-
-    // Check if images were created successfully
-    if (imagesAndPreviews === null) {
-        return; // Exit if no images were created
-    }
-
-    // Apply background neutralization to images
-    applyBackgroundNeutralizationToImages(imagesAndPreviews);
-
-    if (mode === "Starry") {
-        // Apply color calibration based on selected mode
-        applyColorCalibrationToImagesStarry(imagesAndPreviews);
-    } else {
-        // Apply color calibration based on selected mode
-        applyColorCalibrationToImagesStarless(imagesAndPreviews);
-    }
-
-    // Extract emission line data from color-calibrated images
-    for (let i = 0; i < imagesAndPreviews.createdImages.length; i++) {
-        let imageWindow = ImageWindow.windowById(imagesAndPreviews.createdImages[i]);
-        extractEmissionLineData(imageWindow);
-    }
-
-        // Ensure images are grayscale after extracting emission line data
-    for (let i = 0; i < imagesAndPreviews.createdImages.length; i++) {
-        let imageWindow = ImageWindow.windowById(imagesAndPreviews.createdImages[i]);
-        convertToGrayscale(imageWindow);
-    }
-
-    // Apply denoising if selected
-    if (ContinuumSubtractionParameters.applyNoiseReduction) {
-        for (let i = 0; i < imagesAndPreviews.createdImages.length; i++) {
-            let imageWindow = ImageWindow.windowById(imagesAndPreviews.createdImages[i]);
-            if (ContinuumSubtractionParameters.noiseReductionMethod === "NoiseXterminator") {
-                applyNoiseXterminator(imageWindow);
-            } else if (ContinuumSubtractionParameters.noiseReductionMethod === "GraXpertDenoise") {
-                applyGraXpertDenoise(imageWindow);
-            }
-        }
-    }
-
-    console.show();
-
-    if (!ContinuumSubtractionParameters.outputLinearImageOnly) {
-        // Apply non-linear stretch to all created images
-        for (let i = 0; i < imagesAndPreviews.createdImages.length; i++) {
-            let imageWindow = ImageWindow.windowById(imagesAndPreviews.createdImages[i]);
-            applyNonLinearStretch(imageWindow);
-        }
-
-        // Extract pure signal from all created images
-        for (let i = 0; i < imagesAndPreviews.createdImages.length; i++) {
-            let imageWindow = ImageWindow.windowById(imagesAndPreviews.createdImages[i]);
-            extractPureSignal(imageWindow);
-        }
-
-        // Curves Boost on all created images
-        for (let i = 0; i < imagesAndPreviews.createdImages.length; i++) {
-            let imageWindow = ImageWindow.windowById(imagesAndPreviews.createdImages[i]);
-            applyCurvesBoost(imageWindow);
-        }
-    }
-
-    // Print completion message
-    console.noteln("Continuum Subtraction complete! Created: ", imagesAndPreviews.createdImages.join(", "));
-
-    // Close the dialog
-    this.ok();
-};
-
 
 
 // Function to close extracted channels
