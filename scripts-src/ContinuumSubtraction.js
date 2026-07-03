@@ -847,7 +847,7 @@ function applyBackgroundNeutralization(imageWindow, backgroundPreview) {
     P.roiY0 = backgroundPreview.y0;
     P.roiX1 = backgroundPreview.x1;
     P.roiY1 = backgroundPreview.y1;
-    P.mode = BackgroundNeutralization.prototype.RescaleAsNeeded;
+    P.mode = BackgroundNeutralization.RescaleAsNeeded;
     P.targetBackground = 0.0010000;
     P.executeOn(imageWindow.mainView);
 }
@@ -886,7 +886,7 @@ function createImagesAndFindBackground(ha, oiii, sii, redRgb, green) {
         let uniqueID = findUniqueImageID(baseID);
 
         let P = new ChannelCombination;
-        P.colorSpace = ChannelCombination.prototype.RGB;
+        P.colorSpace = ChannelCombination.RGB;
         P.channels = channels;
         P.inheritAstrometricSolution = true;
         P.executeGlobal();
@@ -904,13 +904,13 @@ function createImagesAndFindBackground(ha, oiii, sii, redRgb, green) {
     // Function to extract a color channel from an RGB image
     function extractChannel(imageId, channelIndex, suffix) {
         let P = new ChannelExtraction;
-        P.colorSpace = ChannelExtraction.prototype.RGB;
+        P.colorSpace = ChannelExtraction.RGB;
         P.channels = [
             [channelIndex === 0, ""],
             [channelIndex === 1, ""],
             [channelIndex === 2, ""]
         ];
-        P.sampleFormat = ChannelExtraction.prototype.SameAsSource;
+        P.sampleFormat = ChannelExtraction.SameAsSource;
         P.inheritAstrometricSolution = true;
         P.executeOn(ImageWindow.windowById(imageId).mainView);
         let extractedImage = ImageWindow.activeWindow;
@@ -1054,8 +1054,8 @@ function extractEmissionLineData(imageWindow) {
     P.newImageWidth = 0;
     P.newImageHeight = 0;
     P.newImageAlpha = false;
-    P.newImageColorSpace = PixelMath.prototype.Gray;
-    P.newImageSampleFormat = PixelMath.prototype.SameAsTarget;
+    P.newImageColorSpace = PixelMath.Gray;
+    P.newImageSampleFormat = PixelMath.SameAsTarget;
     P.executeOn(imageWindow.mainView);
 }
 
@@ -1069,7 +1069,7 @@ function createNewImage(channels, baseLabel) {
     }
 
     let P = new ChannelCombination;
-    P.colorSpace = ChannelCombination.prototype.RGB;
+    P.colorSpace = ChannelCombination.RGB;
     P.channels = channels;
     P.inheritAstrometricSolution = true;
     P.executeGlobal();
@@ -1171,7 +1171,7 @@ function applyCurvesBoost(imageWindow){
          [0.37500, 0.55000],
          [1.00000, 1.00000]
       ];
-      P.Kt = CurvesTransformation.prototype.AkimaSubsplines;
+      P.Kt = CurvesTransformation.AkimaSubsplines;
       P.executeOn(imageWindow.mainView);
 }
 
@@ -1193,7 +1193,7 @@ function main() {
 Console.criticalln("   ____    __  _   ___       __         \n  / __/__ / /_(_) / _ | ___ / /_______ ");
 Console.warningln(" _\\ \\/ -_) __/ / / __ |(_-</ __/ __/ _ \\ \n/___/\\__/\\__/_/ /_/ |_/__/\\__/_/  \\___/ \n                                         ");
     let dialog = new ContinuumSubtractionDialog();
-    if (dialog.execute() !== Dialog.prototype.Accepted) {
+    if (dialog.execute() !== Dialog.Accepted) {
         console.noteln("Continuum Subtraction Script Dialog Closed.");
     }
 }
