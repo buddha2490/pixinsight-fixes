@@ -46,5 +46,11 @@
     "release_date": "20260627",
     "zip_name": "ForaxxPalette-20260627.zip",
     "sha1": "ace5b67bdc0254753d15669abfd3e032c709a0f6"
+  },
+  "NBtoRGBStars": {
+    "content_hash": "11aeeb3f05e2a7bf39f7883b5922ede7bdc4128f132a6ac693e4257607aa1910",
+    "release_date": "20260704",
+    "zip_name": "NBtoRGBStars-20260704.zip",
+    "sha1": "e6d5d048f7c33397cecb1f6cc61b50912952fb5e"
   }
 }

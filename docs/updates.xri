@@ -30,6 +30,13 @@
       <title>Halo-B-Gon</title>
       <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
     </package>
+    <package fileName="NBtoRGBStars-20260704.zip"
+             sha1="e6d5d048f7c33397cecb1f6cc61b50912952fb5e"
+             type="script"
+             releaseDate="20260704">
+      <title>NBtoRGBStars</title>
+      <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
+    </package>
     <package fileName="PerfectPalettePicker-20260627.zip"
              sha1="01ca578d46b9724d5fab35237e65691535d03031"
              type="script"
