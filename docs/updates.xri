@@ -3,7 +3,7 @@
   <description><p>Brian Carter — PixInsight script fixes/ports.</p></description>
   <platform os="all" arch="noarch" version="1.8.9:1.9.9">
     <package fileName="AberrationInspector-20260722.zip"
-             sha1="23552b8aaf39837002a8046ff5fed87febe42bf0"
+             sha1="f04bf2d97c5bedc0af75c1c604ec62fc952e93c5"
              type="script"
              releaseDate="20260722">
       <title>AberrationInspector</title>
@@ -52,7 +52,7 @@
       <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
     </package>
     <package fileName="PlanckStarColorMapping-20260722.zip"
-             sha1="a5248d3279b9e6b9d97c921ee6e3514706e9d1ab"
+             sha1="516b52841140eb555e6685b066989d8f5003ba7d"
              type="script"
              releaseDate="20260722">
       <title>PlanckStarColorMapping</title>

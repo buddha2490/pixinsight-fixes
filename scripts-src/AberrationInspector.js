@@ -18,7 +18,7 @@
 #define TITLE "AberrationInspector"
 #define VERSION "1.3"
 
-#feature-id AberrationInspector : Image Analysis > AberrationInspector
+#feature-id AberrationInspector : Pixinsight-Fixes > AberrationInspector
 
 #feature-info An aberration inspector utility.<br/>\
    <br/>\

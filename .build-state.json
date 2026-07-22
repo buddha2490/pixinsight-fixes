@@ -54,15 +54,15 @@
     "sha1": "e6d5d048f7c33397cecb1f6cc61b50912952fb5e"
   },
   "AberrationInspector": {
-    "content_hash": "ff36d621ac5a437f6b67d21fd5578df9390eae8712aba61501ba9a98a7ff5b5c",
+    "content_hash": "f5a470620d0906472f5a6e6957d92265e428a00518e8d427f2911282f2fc8b5c",
     "release_date": "20260722",
     "zip_name": "AberrationInspector-20260722.zip",
-    "sha1": "23552b8aaf39837002a8046ff5fed87febe42bf0"
+    "sha1": "f04bf2d97c5bedc0af75c1c604ec62fc952e93c5"
   },
   "PlanckStarColorMapping": {
-    "content_hash": "27255d72f374b297ab2b86ec6c9a028631b7ce655017b061e5a33304615441ff",
+    "content_hash": "0835923fd39ee190faf525fedc1b5e203b168442a55775902a221f2fbfb84453",
     "release_date": "20260722",
     "zip_name": "PlanckStarColorMapping-20260722.zip",
-    "sha1": "a5248d3279b9e6b9d97c921ee6e3514706e9d1ab"
+    "sha1": "516b52841140eb555e6685b066989d8f5003ba7d"
   }
 }

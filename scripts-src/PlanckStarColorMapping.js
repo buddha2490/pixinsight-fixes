@@ -1,6 +1,6 @@
 #engine v8
 
-#feature-id    PlanckStarColorMapping : Utilities > PlanckStarColorMapping
+#feature-id    PlanckStarColorMapping : Pixinsight-Fixes > PlanckStarColorMapping
 
 #feature-info \
 Maps HOO/HSO/SHO/... stars to naturally colored stars using Planck's law of black body radiation.<br/>\
