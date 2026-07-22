@@ -2,6 +2,13 @@
 <xri version="1.0">
   <description><p>Brian Carter — PixInsight script fixes/ports.</p></description>
   <platform os="all" arch="noarch" version="1.8.9:1.9.9">
+    <package fileName="AberrationInspector-20260722.zip"
+             sha1="23552b8aaf39837002a8046ff5fed87febe42bf0"
+             type="script"
+             releaseDate="20260722">
+      <title>AberrationInspector</title>
+      <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
+    </package>
     <package fileName="AutoDBE-20260627.zip"
              sha1="75afb0e797529dc1c72befe8e26a4f56dac7e419"
              type="script"
@@ -42,6 +49,13 @@
              type="script"
              releaseDate="20260627">
       <title>PerfectPalettePicker</title>
+      <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
+    </package>
+    <package fileName="PlanckStarColorMapping-20260722.zip"
+             sha1="a5248d3279b9e6b9d97c921ee6e3514706e9d1ab"
+             type="script"
+             releaseDate="20260722">
+      <title>PlanckStarColorMapping</title>
       <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
     </package>
     <package fileName="star_stretch_v2.1-20260627.zip"

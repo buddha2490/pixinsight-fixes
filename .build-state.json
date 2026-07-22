@@ -52,5 +52,17 @@
     "release_date": "20260704",
     "zip_name": "NBtoRGBStars-20260704.zip",
     "sha1": "e6d5d048f7c33397cecb1f6cc61b50912952fb5e"
+  },
+  "AberrationInspector": {
+    "content_hash": "ff36d621ac5a437f6b67d21fd5578df9390eae8712aba61501ba9a98a7ff5b5c",
+    "release_date": "20260722",
+    "zip_name": "AberrationInspector-20260722.zip",
+    "sha1": "23552b8aaf39837002a8046ff5fed87febe42bf0"
+  },
+  "PlanckStarColorMapping": {
+    "content_hash": "27255d72f374b297ab2b86ec6c9a028631b7ce655017b061e5a33304615441ff",
+    "release_date": "20260722",
+    "zip_name": "PlanckStarColorMapping-20260722.zip",
+    "sha1": "a5248d3279b9e6b9d97c921ee6e3514706e9d1ab"
   }
 }
