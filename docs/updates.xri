@@ -16,6 +16,13 @@
       <title>AutoDBE</title>
       <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
     </package>
+    <package fileName="ColorMask-20260810.zip"
+             sha1="812ba0473a8e5ac544191195994417c283f4e01d"
+             type="script"
+             releaseDate="20260810">
+      <title>ColorMask</title>
+      <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
+    </package>
     <package fileName="ContinuumSubtraction-20260702.zip"
              sha1="f6abb06a206e5d3241183fad4cb8e4e03015af73"
              type="script"
