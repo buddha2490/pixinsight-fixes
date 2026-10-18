@@ -64,5 +64,17 @@
     "release_date": "20260722",
     "zip_name": "PlanckStarColorMapping-20260722.zip",
     "sha1": "516b52841140eb555e6685b066989d8f5003ba7d"
+  },
+  "ColorMask": {
+    "content_hash": "eb25eb784a4f0091f221d78a96235fc060b2eb5815d273462f40bf75f2b7c53a",
+    "release_date": "20260810",
+    "zip_name": "ColorMask-20260810.zip",
+    "sha1": "812ba0473a8e5ac544191195994417c283f4e01d"
+  },
+  "StarGlow": {
+    "content_hash": "dde77016b483e21efcd39fffcf8ec56fd3a0344bcde90bb8d8d421ca0c88a285",
+    "release_date": "20261018",
+    "zip_name": "StarGlow-20261018.zip",
+    "sha1": "1a4ecd1f52218fda35960da3f13780a8c8ddf34e"
   }
 }

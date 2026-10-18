@@ -72,6 +72,13 @@
       <title>star_stretch_v2.1</title>
       <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
     </package>
+    <package fileName="StarGlow-20261018.zip"
+             sha1="1a4ecd1f52218fda35960da3f13780a8c8ddf34e"
+             type="script"
+             releaseDate="20261018">
+      <title>StarGlow</title>
+      <description><p>Custom/ported script for PixInsight 1.9.4 (V8).</p></description>
+    </package>
     <package fileName="statisticalstretch-20260627.zip"
              sha1="359c5f630f643e999e6ffc4e93a0929e437a8cc8"
              type="script"
